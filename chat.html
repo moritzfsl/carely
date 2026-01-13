@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>carely</title>
+    <link rel="icon" type="icon/ico" sizes="32x32" href="favicon.ico">
+
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.0.2/gradio.js"></script>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Verhindert doppeltes Scrollen */
+        }
+
+        gradio-app {
+            height: 100vh !important;
+            width: 100vw !important;
+            border: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <gradio-app 
+        src="https://moritzfsl-carelydemo.hf.space"
+        theme_mode="light"
+        container="false" 
+        eager="true">
+    </gradio-app>
+
+</body>
+</html>
